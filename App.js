@@ -27,7 +27,7 @@ export default function App() {
 
   //Função para cadastrar comprar
   const cadastrarcomprar = async() =>{
-      const {error} = await supabase.from("tb_veiculos")
+      const {error} = await supabase.from("tb_lista_compras")
       .insert({coluna_produto: produtodigitado, 
                coluna_valor: modeloDigitado,
                coluna_quantidade: quantidadeDigitada})
